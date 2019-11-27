@@ -1,0 +1,102 @@
+.tooltip {
+  background-color: #494949 !important;
+  opacity: 1 !important;
+  width: 300px !important;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container-technical-skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  transition: all 100ms linear;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.bar-container {
+  width: 100%;
+  display: inline-flex;
+  flex-basis: middle;
+  align-items: center;
+}
+.progress {
+  background-color: #007bff;
+  height: 100%;
+  transition: width 100ms linear;
+}
+.skill-title {
+  font-size: 14px;
+  margin: 6px;
+  line-height: 1;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.svg {
+  position: absolute;
+  right: 4px;
+  display: flex;
+}
+
+.svg-icon {
+  width: 6px;
+  margin-right: 2px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.sector-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-languages {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    @media (max-width: 468px) {
+      display: block;
+    }
+  }
+}
+.sector h2 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0.5em;
+  font-family: "Open Sans";
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.sector {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: calc(25% - 16px);
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .sector {
+    width: calc(50% - 16px);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .sector {
+    width: 100%;
+    max-width: 400px;
+  }
+}

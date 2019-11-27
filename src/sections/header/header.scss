@@ -1,0 +1,308 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.gradient {
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 76%,
+    rgba(255, 255, 255, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 76%,
+    rgba(255, 255, 255, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 76%,
+    rgba(255, 255, 255, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: calc(100% - 80px);
+}
+@media (min-width: 992px) {
+  .card {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 600px !important;
+  }
+}
+
+.header {
+  background-color: #cacaca;
+  padding-bottom: 30px;
+  min-height: 100vh;
+}
+.card {
+  padding-top: 75px;
+  margin: auto;
+  height: auto;
+
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 5em;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+
+  &-badge {
+    position: absolute;
+    bottom: 110px;
+    z-index: 1000;
+    right: 31%;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    background-color: #ff4081;
+    border-radius: 4px;
+    font-size: 12px;
+    &:hover {
+      background-color: #ca0b4b;
+    }
+  }
+  &-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-bottom: 12px;
+  }
+  &-show-more {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 100px 0;
+    &::after {
+      content: '';
+      height: 18px;
+      width: 100%;
+    }
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    /* background-image: linear-gradient(to bottom, transparent, white); */
+    > * {
+      left: 0;
+      right: 0;
+      width: 80px;
+      position: absolute;
+      bottom: -50px;
+      margin-top: 32px;
+      margin: auto;
+      background-color: #ff4081;
+      padding: 4px;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background-color: #f8729f;
+      }
+    }
+  }
+
+  &-show-less {
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+    max-height: 2000px;
+    text-align: center;
+
+    margin: 0;
+    padding: 100px 0;
+    &::after {
+      content: '';
+      height: 18px;
+      width: 100%;
+    }
+    > * {
+      left: 0;
+      right: 0;
+      font-size: 14px;
+      width: 80px;
+      position: absolute;
+      bottom: -50px;
+      margin-top: 32px;
+      margin: auto;
+      background-color: #ff4081;
+      padding: 4px;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background-color: #f8729f;
+      }
+    }
+  }
+
+  .personal-info {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 400;
+    letter-spacing: 00.1em;
+    margin: 12px;
+    min-height: 80px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: #f8729f;
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 16px -15px;
+    justify-content: center;
+    > * {
+      transition: background-color 0.3s linear;
+      margin: 2px;
+      text-decoration: none;
+      border-radius: 50%;
+      position: relative;
+      display: grid;
+      > * {
+        cursor: pointer !important;
+        font-size: 24px;
+        width: 52px;
+        height: 52px;
+        color: white;
+        display: grid;
+        align-items: center;
+      }
+    }
+    .linkedin {
+      background-color: #0976b4;
+
+      &:hover {
+        background-color: #0b96e5;
+      }
+    }
+    .facebook {
+      background-color: #3b5998;
+      &:hover {
+        background-color: #4c70ba;
+      }
+    }
+    .instagram {
+      background-color: #c13584;
+      &:hover {
+        background-color: #e053a3;
+      }
+    }
+    .github {
+      background-color: #4183c4;
+
+      &:hover {
+        background-color: #689cd0;
+      }
+    }
+    .deviantart {
+      background-color: #05cc47;
+
+      &:hover {
+        background-color: #4dc47d;
+      }
+    }
+    .youtube {
+      background-color: red;
+
+      &:hover {
+        background-color: rgb(251, 50, 50);
+      }
+    }
+  }
+  .name {
+    font-weight: 600;
+    margin: 8px;
+    font-family: 'Open Sans';
+    font-size: 32px;
+  }
+
+  .job-title {
+    font-family: 'Alegreya Sans SC';
+    font-size: 18px;
+    letter-spacing: 00.1em;
+    font-weight: 800;
+    color: #2196f3;
+  }
+  .about-me {
+    word-wrap: break-word;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    transition: max-height 500ms linear;
+    font-family: 'Open Sans';
+    word-wrap: break-word;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.735;
+    text-align: justify;
+    text-justify: inter-word;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    display: block;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #ff4081;
+    }
+  }
+}
+.gradient {
+}
+.profile {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  margin-bottom: -75px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+  position: relative;
+}
+
+.background {
+  height: 250px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: -200px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .card {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
