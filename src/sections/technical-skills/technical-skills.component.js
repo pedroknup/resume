@@ -1,6 +1,6 @@
-import React from "react";
-import { SkillBarComponent } from "./skill-bar";
-import "./technical-skills.component.scss";
+import React from 'react';
+import { SkillBarComponent } from './skill-bar';
+import './technical-skills.component.scss';
 
 const TechnicalSkills = () => {
   return (
@@ -16,7 +16,7 @@ const TechnicalSkills = () => {
         />
         <SkillBarComponent
           id={1}
-          text="I've been studying and working with React intensively. I'm always following the new releases of it. On my React projects, I like to use Redux (or context), Typescript and SCSS."
+          text="I've been studying and working with React intensively. I'm constantly following the new releases of it. On my React projects, I like to use Redux (or context), Typescript and SCSS."
           title="ReactJS"
           speed={3}
           value={90}
@@ -24,7 +24,7 @@ const TechnicalSkills = () => {
         <SkillBarComponent
           id={2}
           title="VueJS"
-          text="VueJS was my first attempt to be updated in front end. Basic knowledge. I stopped studying it after I met ReactJS."
+          text="Just curious. I stopped studying it after I met ReactJS."
           value={40}
         />
       </div>
@@ -33,7 +33,7 @@ const TechnicalSkills = () => {
         <SkillBarComponent
           id={3}
           title=".NET Framework/Core"
-          text="I had several .NET experiences, with both Core (v1.0 & v2.0) and Framework. Most of them I used Entity Framework to better interact with the MSSQL Database. "
+          text="I had several .NET experiences, with both Core (v1.0 & v2.0) and Framework. I delivered big projects where some of them I had to deal with millions of data (from the database) "
           value={80}
         />
         <SkillBarComponent
@@ -58,45 +58,51 @@ const TechnicalSkills = () => {
           value={60}
         />
         <SkillBarComponent
+          id={11}
+          title="Docker"
+          text="Docker made my life easier. I'm using it for almost every project I'm working on."
+          value={60}
+        />
+        <SkillBarComponent
           id={6}
           title="Microsoft Azure"
           text="I use Azure to host some personal projects. Serverless applications, CI/CD pipelines, hosting, function apps and so on. "
-          value={40}
+          value={30}
         />
         <SkillBarComponent
           id={8}
           title="Google Firebase"
           text="I used Firebase to host some web apps and also for a serverless application. "
-          value={40}
+          value={25}
         />
         <SkillBarComponent
           id={9}
           speed={1}
           title="AWS"
           text="I used AWS to host my biggest Mobile App I have made (Cabe+1). But I switched to Azure due the Azure plan that I got."
-          value={35}
+          value={20}
         />
         <SkillBarComponent
           id={10}
           title="PHP"
           text="PHP was my first full stack/back-end language. I learned it by myself when I saw it on highschool. I was always using it on my first web projects.   "
-          value={30}
+          value={20}
         />
       </div>
       <div className="sector">
         <h2>Mobile</h2>
         <SkillBarComponent
-          id={11}
-          title="Xamarin"
-          text="With my knowledge on C#, quickly I was building rich and well written mobile native applications. It was what I needed for mobile development. But nowadays I switched to React Native, since I'm working hard with it."
-          value={80}
-        />
-        <SkillBarComponent
           id={12}
           title="React Native"
-          text="I've been studying React Native in the last year and I used it for some freelancers projects. I'm able to build native mobile application in an awesome speed. "
+          text="I've been studying React Native in the last year and I used it for some freelance projects. I'm able to build native mobile application in an awesome speed. "
           speed={1}
           value={85}
+        />
+        <SkillBarComponent
+          id={11}
+          title="Xamarin"
+          text="With my knowledge on C#, I was quickly building rich and well written mobile native applications. It was what I needed for mobile development. But nowadays I switched to React Native."
+          value={80}
         />
         <SkillBarComponent
           id={14}
