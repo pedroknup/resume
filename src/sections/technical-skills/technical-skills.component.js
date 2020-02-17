@@ -94,7 +94,7 @@ const TechnicalSkills = () => {
         <SkillBarComponent
           id={12}
           title="React Native"
-          text="I've been studying React Native in the last year and I used it for some freelance projects. I'm able to build native mobile application in an awesome speed. "
+          text="I've been studying React Native since 2018 and I used it for some freelance projects. I'm able to build native mobile application in an awesome speed. "
           speed={1}
           value={85}
         />
